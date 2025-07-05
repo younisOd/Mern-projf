@@ -1,10 +1,14 @@
-function Contact() {
+import Header from "../components/Header";
+import AboutPage from "../aboutcomponent/AboutPage";
+import Footer from "../components/Footer";
+import Contactcom from "../contactcomponent/Contactcom";
+
+export default function About() {
   return (
     <div>
-      <h1>Contact Us</h1>
-      <p>Feel free to reach out with any questions or feedback.</p>
+      <Header />
+      <Contactcom />
+      <Footer />
     </div>
   );
 }
-
-export default Contact;
