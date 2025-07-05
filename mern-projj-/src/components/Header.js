@@ -26,26 +26,31 @@ export default function Header() {
       <div className="grid grid-cols-3 items-center justify-between px-6 py-3 border-b border-white">
         {/* Left Links */}
         <nav className="flex gap-5 text-sm justify-start">
-          <Link to="/teas" className="hover:underline">
+          <Link to="/teas" className="hover:underline text-white">
             Teas
           </Link>
-          <Link to="/extras" className="hover:underline">
+          <Link to="/extras" className="hover:underline text-white">
             Extras
           </Link>
-          <Link to="/about" className="hover:underline">
+          <Link to="/about" className="hover:underline text-white">
             About
           </Link>
-          <Link to="/blog" className="hover:underline">
+          <Link to="/blog" className="hover:underline text-white">
             Blog
           </Link>
-          <Link to="/contact" className="hover:underline">
+          <Link to="/contact" className="hover:underline text-white">
             Contact
           </Link>
         </nav>
 
-        {/* Center Logo */}
+        {/* Center Logo (now clickable) */}
         <div className="text-center">
-          <h1 className="text-lg tracking-widest font-medium">BLOOM'S TEA</h1>
+          <Link
+            to="/"
+            className="hover:underline text-white"
+          >
+            BLOOM'S TEA
+          </Link>
         </div>
 
         {/* Right Social Icons */}

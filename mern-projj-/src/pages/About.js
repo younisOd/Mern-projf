@@ -1,10 +1,13 @@
-function About() {
+import Header from "../components/Header";
+import AboutPage from "../aboutcomponent/AboutPage";
+import Footer from "../components/Footer";
+
+export default function About() {
   return (
     <div>
-      <h1>About Us</h1>
-      <p>Learn more about our tea journey and our story.</p>
+      <Header />
+      <AboutPage />
+      <Footer />
     </div>
   );
 }
-
-export default About;
